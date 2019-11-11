@@ -1,0 +1,6 @@
+'name': 'Zig'
+'scopeName': 'source.zig'
+'type': 'tree-sitter'
+'fileTypes': [
+	'zig'
+]

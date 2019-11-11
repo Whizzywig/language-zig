@@ -1,0 +1,45 @@
+name: 'Zig'
+scopeName: 'source.zig'
+tpye: 'tree-sitter'
+parser: 'tree-sitter-zig'
+
+fileTypes: [
+	'zig'
+]
+comments:
+	start: '// '
+
+folds: [
+	type: 'comment'
+]
+scopes:
+	'comment': 'comment.block'
+
+	'"if"': 'keyword.control.directive'
+
+	'null': 'constant.language.null'
+	'true': 'constant.language.boolean'
+	'false': 'constant.language.boolean'
+
+	'";"': 'punctuation.terminator.statement'
+	'","': 'punctuation.separator.delimiter'
+	'"{"': 'punctuation.section.block.begin.bracket.curly'
+	'"}"': 'punctuation.section.block.end.bracket.curly'
+	'"("': 'punctuation.section.parens.begin.bracket.round'
+	'")"':'punctuation.section.parens.end.bracket.round'
+
+	'"."': 'keyword.operator.member'
+
+	'''
+		"+",
+		"-",
+		"*",
+		"/",
+		"**",
+		"==",
+		"!=",
+		"=",
+		"+=",
+		"-=",
+		":"
+	''': 'keyword.operator'
