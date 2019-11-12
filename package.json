@@ -9,11 +9,11 @@
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/Whizzywig/language-zig.git"
-	}
+	},
 	"engines": {
 		"atom": "*",
 		"node": "*"
-	}
+	},
 	"dependencies": {
 		"tree-sitter-zig": "0.0.0"
 	}
